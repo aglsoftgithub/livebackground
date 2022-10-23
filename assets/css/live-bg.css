@@ -2,7 +2,7 @@
 * Project Name: Live Background - v1.0.0
 * Git URL: https://github.com/aglsoftgithub/livebackground
 * Author: Adrien Guy Lagrange
-* Site URL: https://bit.ly/2XjVILN
+* Site URL: https://bit.ly/3jzb5VN
 * License: MIT
 ******************************************************************/
 
@@ -14,8 +14,8 @@ body{
 /*****************************************************************
                     Live Background Style
 *****************************************************************/
-#live-background > #mirror, 
-#live-background > .background{
+#live-bg > #mirror, 
+#live-bg > .background{
     margin: 0;
     padding: 0;    
     width: 100%;
@@ -24,7 +24,7 @@ body{
     position: absolute;
 }
 
-#live-background > #mirror{
+#live-bg > #mirror{
     background-color: #000;
 }
 

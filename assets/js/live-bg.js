@@ -1,3 +1,11 @@
+/*****************************************************************
+* Project Name: Live Background - v1.0.0
+* Git URL: https://github.com/aglsoftgithub/livebackground
+* Author: Adrien Guy Lagrange
+* Site URL: https://bit.ly/3jzb5VN
+* License: MIT
+******************************************************************/
+
 // ids for background to show and hide
 var show = 1;
 var hide = 2;
