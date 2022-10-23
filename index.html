@@ -1,1 +1,40 @@
-index.html
+<!-- =======================================================
+  * Project Name: Live Background - v1.0.0
+  * Git URL: https://github.com/aglsoftgithub/livebackground
+  * Author: Adrien Guy Lagrange
+  * Site URL: https://bit.ly/2XjVILN
+  * License: MIT
+  ======================================================== -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Adrien Guy Lagrange">
+	<meta name="description" content="Librairy to make easily a live background on a div, section or container">
+	<title>Live Background Example</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/live-bg.css">
+</head>
+<body>
+
+	<!-- Create div for the live background --> 
+	<div id="live-background">
+        <!-- Create two div to switch pictures for the live background -->
+        <div class="background" id="background1"></div>
+        <div class="background" id="background2"></div>
+
+        <!-- Add a mirror to configure the brightness of picture -->
+        <div id="mirror"></div>
+    </div>
+
+    <div id="main-title">
+    	<h1>Live Background Carousel</h1>
+    	<p>
+    		A custom code to make beautiful carousel with HTML5, CSS3, JavaScript.
+    	</p>
+    </div>
+
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/live-bg.js"></script>
+</body>
+</html>
