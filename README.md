@@ -147,4 +147,4 @@ Please refer to the our [CHANGELOG](#) file. We will add a detailed release note
 ## Social Media 🌍
 
 - Telegram : [https://t.me/aglsoftchannel](https://t.me/aglsoftchannel)
-- YouTube : [https://www.youtube.com/channel/UC1BgnUNMzL3jv1zMhAusJ4g](https://www.youtube.com/channel/UC1BgnUNMzL3jv1zMhAusJ4g)
+- YouTube : [https://www.youtube.com/channel/UClODulUUpTiuG0TmsREdawQ](https://www.youtube.com/channel/UClODulUUpTiuG0TmsREdawQ)
