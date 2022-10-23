@@ -1,0 +1,25 @@
+{
+  "name": "livebackground",
+  "version": "1.0.0",
+  "description": "Librairy to make easily a live background on a div, section or container",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aglsoftgithub/livebackground.git"
+  },
+  "keywords": [
+    "background",
+    "live",
+    "carousel",
+    "animation"
+  ],
+  "author": "Adrien Guy Lagrange",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aglsoftgithub/livebackground/issues"
+  },
+  "homepage": "https://github.com/aglsoftgithub/livebackground#readme"
+}
