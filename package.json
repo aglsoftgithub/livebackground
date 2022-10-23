@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/aglsoftgithub/livebackground/issues"
   },
-  "homepage": "https://github.com/aglsoftgithub/livebackground#readme"
+  "homepage": "https://github.com/aglsoftgithub/livebackground#readme",
+  "dependencies": {
+    "jquery": "^3.6.1"
+  }
 }
