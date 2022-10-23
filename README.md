@@ -5,8 +5,7 @@
       Live Background v1.0.0
    </a>
 </h1>
-
-<p align="center">Free Librairy to make easily a live background on a div, section or container</p>
+<p align="center">Free Library to make easily a live background on a div, section or container</p>
 
 ![Live Background Demo Image](https://aglsofthostingwebserver.on.drv.tw/sites/livebackground/demo.png)
 
@@ -82,6 +81,23 @@ LiveBackground is a JavaScript library that allows you to insert a carousel or s
  */
 function config(img_folder=null, max_img=null, animation_time=null, transition_time=null, brightness=null);
 ```
+Here is our default configuration
+
+```js
+// max images to display
+var DEFAULT_MAX_IMG = 7;
+
+// animations default time (ms)
+var DEFAULT_ANIMATION_TIME = 7000;
+var DEFAULT_TRANSITION_TIME = 1200;
+
+// Default Pictures Folder
+var DEFAULT_IMG_FOLDER = "assets/img";
+
+// Default Pictures Brightness (value between 0 and 1)
+var DEFAULT_BRIGHTNESS = 0.3;
+```
+
 ## Documentation 📜
 
 Not available yet.

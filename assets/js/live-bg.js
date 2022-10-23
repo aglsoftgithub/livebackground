@@ -99,6 +99,6 @@ function livebackground(){
  * 
  * You can use it for apps with settings 
  */
-function stop_live_bg(){
+function stop_livebackground(){
 	clearTimeout(TIMER);
 }
