@@ -8,6 +8,8 @@
 
 <p align="center">Free Librairy to make easily a live background on a div, section or container</p>
 
+![Live Background Demo Image](https://aglsofthostingwebserver.on.drv.tw/sites/livebackground/demo.png)
+
 ![GitHub](https://img.shields.io/github/license/themeselection/sneat-html-admin-template-free)
 
 ## Introduction 🚀
@@ -21,7 +23,7 @@ LiveBackground is a JavaScript library that allows you to insert a carousel or s
 ## Installation ⚒️
 
 1. Download the code on [GitHub Repository](https://github.com/aglsoftgithub/livebackground) .
-2. Import libraries required
+2. Import or copy libraries required
 
 ```html
 <!-- import jquery (^3.6.1) -->
