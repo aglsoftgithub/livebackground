@@ -7,14 +7,14 @@ var current_img = 1;
 // max images to display
 var DEFAULT_MAX_IMG = 7;
 
-// animations default time
+// animations default time (ms)
 var DEFAULT_ANIMATION_TIME = 7000;
 var DEFAULT_TRANSITION_TIME = 1200;
 
 // Default Pictures Folder
 var DEFAULT_IMG_FOLDER = "assets/img";
 
-// Default Mirror Opacity
+// Default Pictures Brightness (value between 0 and 1)
 var DEFAULT_BRIGHTNESS = 0.3;
 
 // Variable used to control the animation process (start, stop)
@@ -34,7 +34,7 @@ var lb_brightness;
  * @param {Integer} max_img 			The max number of pictures to load
  * @param {Integer} animation_time 		The time (ms) used to switch between two pictures
  * @param {Integer} transition_time 	The time (ms) used for the switch animation 
- * @param {Float} brightness 			The percent (ms) used for the switch animation 
+ * @param {Float} brightness 			The opacity of pictures to display (value between 0 and 1)
  */
 function config(img_folder=null, max_img=null, animation_time=null, transition_time=null, brightness=null){
 	(img_folder == null) 		? lb_img_folder = DEFAULT_IMG_FOLDER : lb_img_folder = img_folder;
