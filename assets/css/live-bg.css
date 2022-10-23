@@ -1,0 +1,46 @@
+/*****************************************************************
+* Project Name: Live Background - v1.0.0
+* Git URL: https://github.com/aglsoftgithub/livebackground
+* Author: Adrien Guy Lagrange
+* Site URL: https://bit.ly/2XjVILN
+* License: MIT
+******************************************************************/
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*****************************************************************
+                    Live Background Style
+*****************************************************************/
+#live-background > #mirror, 
+#live-background > .background{
+    margin: 0;
+    padding: 0;    
+    width: 100%;
+    height: 100%;
+    z-index: -999;
+    position: absolute;
+}
+
+#live-background > #mirror{
+    opacity: 0.7;
+    background-color: #000;
+}
+
+/*****************************************************************
+                        Main Title
+*****************************************************************/
+#main-title{
+    color: #fff;
+    margin-left: 40px;
+    position: absolute;
+    font-family: Times, Arial;
+}
+
+#main-title h1{
+    font-size: 50px;
+    text-shadow: 0 0 3px #fff;
+    margin-top: 50%;
+}
