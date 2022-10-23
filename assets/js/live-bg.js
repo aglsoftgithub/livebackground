@@ -9,10 +9,13 @@ var DEFAULT_MAX_IMG = 7;
 
 // animations default time
 var DEFAULT_ANIMATION_TIME = 7000;
-var DEFAULT_TRANSITION_DELAY = 1200;
+var DEFAULT_TRANSITION_TIME = 1200;
 
 // Default Pictures Folder
 var DEFAULT_IMG_FOLDER = "assets/img";
+
+// Default Mirror Opacity
+var DEFAULT_BRIGHTNESS = 0.3;
 
 // Variable used to control the animation process (start, stop)
 var TIMER = -1;
@@ -22,25 +25,32 @@ var lb_img_folder;
 var lb_max_img;
 var lb_animation_time;
 var lb_transition_time;
+var lb_brightness;
 
 /**
  * used to configure the live background animation
  * 
- * @param {string} folder The folder of pictures to load
- * @param {number} max_img The max number of pictures to load
- * @param {number} animation_time The time (ms) used to switch between two pictures
- * @param {number} transition_time The time (ms) used for the switch animation 
+ * @param {String} img_folder 			The folder of pictures to load
+ * @param {Integer} max_img 			The max number of pictures to load
+ * @param {Integer} animation_time 		The time (ms) used to switch between two pictures
+ * @param {Integer} transition_time 	The time (ms) used for the switch animation 
+ * @param {Float} brightness 			The percent (ms) used for the switch animation 
  */
-function config(img_folder=null, max_img=null, animation_time=null, transition_time=null){
-	(img_folder == null) ? lb_img_folder = DEFAULT_IMG_FOLDER : lb_img_folder = img_folder;
-
-	console.log(lb_img_folder);
+function config(img_folder=null, max_img=null, animation_time=null, transition_time=null, brightness=null){
+	(img_folder == null) 		? lb_img_folder = DEFAULT_IMG_FOLDER : lb_img_folder = img_folder;
+	(max_img == null) 			? lb_max_img = DEFAULT_MAX_IMG : lb_max_img = max_img;
+	(animation_time == null) 	? lb_animation_time = DEFAULT_ANIMATION_TIME : lb_animation_time = animation_time;
+	(transition_time == null) 	? lb_transition_time = DEFAULT_TRANSITION_TIME : lb_transition_time = transition_time;
+	(brightness == null) 		? lb_brightness = DEFAULT_BRIGHTNESS : lb_brightness = brightness;
 }
 
 /**
  * launches the live background animation
  */
 function livebackground(){
+	// set mirror opacity
+	$("#mirror").css("opacity", (1-parseFloat(lb_brightness)));
+
 	// hide active background dive
 	$("#background"+hide).fadeOut(lb_transition_time);
 
@@ -73,7 +83,7 @@ function livebackground(){
 	}
 
 	// repeat the animation through time
-	TIMER = setTimeout(start_live_bg, lb_animation_time);
+	TIMER = setTimeout(livebackground, lb_animation_time);
 }
 
 /**
